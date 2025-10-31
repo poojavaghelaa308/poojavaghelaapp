@@ -60,7 +60,15 @@ class MainActivity : AppCompatActivity() {
             onAwayFromEar = { viewModel.switchToSpeaker() }
         )
 
-        binding.btnPlay.setOnClickListener { viewModel.playAudio() }
+        binding.btnPlay.setOnClickListener {
+            if (viewModel.isPlaying()) {
+                viewModel.stopAudio()
+                binding.btnPlay.text = getString(R.string.play_audio)
+            } else {
+                viewModel.playAudio()
+                binding.btnPlay.text = getString(R.string.stop_audio)
+            }
+        }
 
         binding.btnRecord.setOnClickListener {
             if (!isRecording) {

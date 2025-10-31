@@ -6,6 +6,7 @@
     <string name="recording_stopped">Recording stopped</string>
     <string name="schedule_saved_successfully">Schedule saved successfully</string>
     <string name="play_audio">Play Audio</string>
+    <string name="stop_audio">Stop Audio</string>
     <string name="theme_settings">Theme Settings</string>
     <string name="dark_mode_schedule">Dark Mode Schedule</string>
     <string name="start_time">Start Time</string>

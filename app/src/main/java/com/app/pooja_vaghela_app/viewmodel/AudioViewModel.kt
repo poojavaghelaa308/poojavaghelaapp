@@ -14,4 +14,6 @@ class AudioViewModel(app: Application) : AndroidViewModel(app) {
     fun switchToSpeaker() = repository.switchToSpeaker()
     fun startRecording() = repository.startRecording()
     fun stopRecording() = repository.stopRecording()
+    fun stopAudio() = repository.stopAudio()  // add stop method
+    fun isPlaying() = repository.isPlaying()
 }

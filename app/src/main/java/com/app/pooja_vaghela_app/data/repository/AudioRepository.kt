@@ -182,5 +182,15 @@ class AudioRepository(private val context: Context) {
             Log.e("AudioRepository", "Stop recording error: ${e.message}")
         }
     }
+    fun isPlaying(): Boolean {
+        return mediaPlayer?.isPlaying == true
+    }
+
+    fun stopAudio() {
+        mediaPlayer?.stop()
+        mediaPlayer?.release()
+        mediaPlayer = null
+    }
+
 
 }
